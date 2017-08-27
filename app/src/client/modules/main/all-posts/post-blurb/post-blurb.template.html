@@ -1,0 +1,8 @@
+<div class="post-blurb">
+  <div class="post-title-blurb"><h2>{{post.title | uppercase}}</h2></div>
+  <div class="post-body-blurb">
+    {{post.body | limitTo: 60}}...
+    <a ui-sref="main.post({id: {{post.id}}})"><span class="read-more">Read More</span></a>
+    <add-favorite post="post"></add-favorite>
+  </div>
+</div>

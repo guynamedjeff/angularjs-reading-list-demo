@@ -1,0 +1,18 @@
+$overflow-background-color: #EBEBEB;
+$all-posts-background: #fff;
+
+$post-blurb-background: #EBEBEB;
+$post-blurb-color: #000;
+
+$favorite-posts-background: rgba(0,0,0,.9);
+$favorite-posts-color: #fff;
+
+$post-border: 1px solid #ccc;
+
+@mixin blurb-base() {
+  padding: 30px;
+  color: $post-blurb-color;
+  background-color: $post-blurb-background;
+  border-color: $post-border;
+  border-radius: 5px;
+}

@@ -1,0 +1,8 @@
+<div class="all-posts">
+  <favorite-posts>
+    <ui-view class="single-post-container"></ui-view>
+    <div ng-repeat="post in $ctrl.posts">
+      <post-blurb></post-blurb>
+    </div>
+  </favorite-posts>
+</div>

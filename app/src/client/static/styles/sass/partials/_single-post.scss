@@ -1,0 +1,10 @@
+.single-post-container {
+  width: 100%;
+}
+
+.single-post {
+  height: 300px;
+  width: 90%;
+  margin: auto;
+  @include blurb-base();
+}

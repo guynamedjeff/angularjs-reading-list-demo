@@ -1,0 +1,39 @@
+.post-selection {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.favorite-posts {
+  padding: 30px;
+  margin: 20px;
+  padding: 15px 30px 30px 30px;
+  color: $favorite-posts-color;
+  background-color: $favorite-posts-background;
+  border-color: $post-border;
+  border-radius: 5px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 400px;
+  max-height: 250px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  .favorite-post-title {
+    margin: 15px 0px;
+  }
+
+  .read-more {
+    font-weight: 600;
+    white-space: nowrap;
+    color: #fff;
+    &:hover {
+      color: #fff;
+    }
+    &:active, &:focus {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.post-blurb {
+  flex: 1 auto;
+  width: 400px;
+  margin: 20px;
+  @include blurb-base();
+
+  .read-more {
+    font-weight: 600;
+    white-space: nowrap;
+    color: #000;
+    &:hover {
+      color: #000;
+    }
+    &:active, &:focus {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+
+  .post-title-blurb {
+    padding-bottom: 30px;
+  }
+
+  .post-body-blurb {
+    padding-bottom: 20px;
+  }
+}

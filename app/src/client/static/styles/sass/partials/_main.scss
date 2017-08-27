@@ -1,0 +1,21 @@
+#application-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: auto;
+
+  application-header {
+    flex: 0;
+  }
+
+  #application-content {
+    flex: 1;
+    background-color: $overflow-background-color;
+    padding-bottom: 225px;
+  }
+
+  application-footer {
+    flex: 0;
+    z-index: 9999;
+  }
+}

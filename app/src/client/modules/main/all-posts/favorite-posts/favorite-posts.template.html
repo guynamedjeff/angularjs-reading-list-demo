@@ -1,0 +1,8 @@
+<div class="favorite-posts">
+  <h2>Reading List</h2>
+  <div class="favorite-post-title" ng-repeat="favorite in favoritePosts">
+    {{favorite.title | limitTo: 60 | uppercase}}...
+    <a ui-sref="main.post({id: {{favorite.id}}})"><span class="read-more">Read</span></a>
+  </div>
+</div>
+<div class="post-selection" ng-transclude></div>
